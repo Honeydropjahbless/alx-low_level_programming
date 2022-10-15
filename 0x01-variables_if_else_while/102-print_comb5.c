@@ -4,25 +4,23 @@
 
 /**
  * main - Entry point
- *
- * Description: Prints all possible combinations of two-digits numbers
- *
- * Return: 0 success, non zero fail
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i, j;
+	int p, q;
 
-	for (i = 0; i <= 99; i++)
+	for (p = 0; p <= 98; p++)
 	{
-		for (j = i + 1; j <= 99; j++)
+		for (q = p + 1; q <= 99; q++)
 		{
-			putchar('0' + 1 / 10);
-			putchar('0' + i % 10);
+			putchar((p / 10) + '0');
+			putchar((p % 10) + '0');
 			putchar(' ');
-			putchar('0' + j / 10);
-			putchar('0' + j % 10);
-			if (i == 98 && j == 99)
+			putchar((q / 10) + '0');
+			putchar((q % 10) + '0');
+
+			if (p == 98 && q == 99)
 				continue;
 
 			putchar(',');
