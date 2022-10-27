@@ -1,26 +1,25 @@
 #include "main.h"
 
 /**
- * print_number -  prints an integer
- * @n: number to be printed
+ * print_number - Prints an integer
+ * @a: number to be printed
  *
- * Return:  void
+ * Return: void
  */
 
-void print_number(int n)
+void print_number(int a)
 {
 	unsigned int m, d, count;
 
-	if (n < 0)
+	if (a < 0)
 	{
 		_putchar(45);
-		m = n * -1;
+		m = a * -1;
 	}
 	else
 	{
-		m = n;
+		m = a;
 	}
-
 	d = m;
 	count = 1;
 
